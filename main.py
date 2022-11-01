@@ -24,4 +24,8 @@ driver.get("https://www.instagram.com/_javadeveloper/?next=%2F#")
 sleep(4)
 followers = driver.find_element("css selector", "li a")
 followers.click()
-sleep(2)
+sleep(4)
+
+follow_btns = driver.find_elements("css selector", "._aano button")
+for btn in follow_btns:
+    btn.click()
